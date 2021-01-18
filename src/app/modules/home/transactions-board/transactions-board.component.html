@@ -1,5 +1,3 @@
 <p>transactions-board works!</p>
-<app-currency-transaction></app-currency-transaction>
-<app-currency-transaction></app-currency-transaction>
-<app-currency-transaction></app-currency-transaction>
-<app-currency-transaction></app-currency-transaction>
+<app-currency-transaction *ngFor="let transition of getAllTransactions()"
+  [transaction]="transition"></app-currency-transaction>

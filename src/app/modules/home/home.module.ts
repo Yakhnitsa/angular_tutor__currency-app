@@ -9,9 +9,9 @@ import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [TransactionsBoardComponent, CurrencyTransactionComponent, TransactionFormComponent, HomeComponent],
-  exports: [HomeComponent, TransactionFormComponent],
+  exports: [HomeComponent],
   imports: [
-    CommonModule
+    CommonModule,
   ]
 })
 export class HomeModule { }
